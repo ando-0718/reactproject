@@ -1,0 +1,86 @@
+body {
+  background: rgb(110,44,140);
+  background: linear-gradient(90deg, rgba(110,44,140,1) 35%, rgba(58,37,62,1) 75%);
+  overflow-y: hidden;
+}
+
+.formContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.formContainer form {
+    background-color: white;
+    width: 70%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+    box-shadow: 36px 25px 15px 0px #302c2c;
+    border-radius: 10px;
+}
+
+.uiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formField input {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.formField input.focus {
+  outline: none;
+}
+
+.formField label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+button {
+  background-color: #0e528d;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #175892;
+}
+
+.errorMsg {
+  color: red;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.msgOK {
+  color: green;
+  margin-top: 15px;
+}
